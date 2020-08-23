@@ -2,6 +2,8 @@ import styled, { css } from 'styled-components';
 
 import {Cake, LocationOn} from '../../styles/Icons';
 
+import Button from '../Button';
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -19,18 +21,91 @@ export const Banner = styled.div`
 
   width: 100%;
   height: min(33vw, 199px);
+  background-color: var(--twitter);
+
+  position: relative;
 `;
 
 export const Avatar = styled.div`
-  
-`;
+  width: max(45px, min(135px, 22vw));
+  height: max(45px, min(135px, 22vw));
 
-export const FollowAge = styled.div`
-  
+  border: 3.75px solid var(--primary);
+  background-color: var(--gray);
+  border-radius: 50%;
+
+  position: absolute;
+  bottom: max(-60px, -10vw);
+  left: 15px;
 `;
 
 export const ProfileData = styled.div`
-  
+  padding: min(calc(10vw + 7px), 67px) 16px 0px;
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+  > h1 {
+    font-weight: bold;
+    font-size: 19px;
+  }
+  > h2 {
+    font-weight: normal;
+    font-size: 15px;
+    color: var(--gray);
+  }
+  > p {
+    font-size: 15px;
+    margin: 0;
+    margin-top: 11px;
+
+    > a {
+      text-decoration: none;
+      color: var(--twitter);
+    }
+  }
+  > ul {
+    list-style: none;
+    margin-top:10px;
+    margin-bottom:10px;
+    > li {
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      color: var(--gray);
+      > svg {
+        fill: var(--gray);
+        margin-right: 5px;
+      }
+    }
+  }
+`;
+
+export const FollowAge = styled.div`
+  display: flex;
+  > span {
+    color: var(--gray);
+    font-size: 15px;
+    
+    & + span {
+      margin-left: 20px;
+    }
+  }
+`;
+
+export const EditButton = styled(Button)`
+  position: absolute;
+  right: 7px;
+  top: 2vw;
+  padding: 4px 16px;
+  font-size: 13px;
+
+  @media (min-width: 320px) {
+    top: 10px;
+    padding: 10px 19px;
+    font-size: 15px;
+  }
 `;
 
 const cssIcon = css`
