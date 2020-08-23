@@ -67,7 +67,7 @@ export const BackIcon = styled(ArrowLeft)`
 
 export const BottomMenu = styled.div`
   z-index: 2;
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   left: 0px;
   width: 100%;

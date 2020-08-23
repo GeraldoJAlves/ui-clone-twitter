@@ -112,9 +112,25 @@ export const Status = styled.div`
   display: flex;
   align-items: center;
   font-size: 14px;
-  color: var(--gray);
   > svg {
     margin-right: 5px;
+  }
+  &:nth-child(1) {
+    &, > svg path {
+      color: var(--gray);
+    }
+  }
+  &:nth-child(2) {
+    color: var(--retweet);
+    > svg {
+      fill: var(--retweet);
+    }
+  }
+  &:nth-child(3) {
+    color: var(--like);
+    > svg {
+      fill: var(--like);
+    }
   }
 `;
 
