@@ -7,6 +7,7 @@ import {
   FavoriteBorder,
   Person,
   ExitToApp,
+  Twitter
 } from '../../styles/Icons';
 
 export const Container = styled.div`
@@ -34,12 +35,10 @@ export const TopSide = styled.div`
   }
 `;
 
-export const Logo = styled(Person)`
+export const Logo = styled(Twitter)`
   height: 41px;
   width: 41px;
-  > svg {
-    fill: var(--twitter);
-  }
+  fill: var(--twitter);
   margin-bottom: 20px;
 `;
 
@@ -160,8 +159,17 @@ export const ExitIcon = styled(ExitToApp)`
   display: none;
 
   @media (min-width:1280px) {
-    display: inline;
-    width: 24px;
-    height: 24px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    color: var(--white);
+    margin-left: 30px;
+    cursor: pointer;
+
+    &:hover {
+      > path {
+        color: var(--like);
+      }
+    }
   }
 `;
