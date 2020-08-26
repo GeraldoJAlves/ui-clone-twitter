@@ -1,11 +1,26 @@
 
-## UI-CLONE-TWITTER
+<h1 align="center">
+UI Clone - Twitter
+</h1>
 
-Clone do twitter para aprender:
-* CSS.
-* React com Typescript.
-* Organização de components.
+## Techs
 
-Para visualizar o resultado acesse:
+- [x] React.js
+- [x] Styled Components
+- [x] TypeScript
+
+## Starting Dev Environment
+
+1. Run `npm install` or `yarn install`.<br />
+2. Run `yarn start` and access `http://localhost:3000`.<br />
+
+## Objetivos
+
+- Organização de components no React.
+- Responsividade em mobile, tablet e pc.
+- Aperfeiçoamento de CSS.
+
+## Result
+
 https://clever-brattain-a6f450.netlify.app/
 
