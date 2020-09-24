@@ -22,5 +22,5 @@ UI Clone - Twitter
 
 ## Result
 
-https://clever-brattain-a6f450.netlify.app/
+https://ui-clone-twitter-geraldojalves.netlify.app
 
